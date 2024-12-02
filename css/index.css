@@ -1,7 +1,7 @@
 body {
     background: #1c222d;
     margin: 0;
-    overflow-x: hidden;
+    padding: 0;
     color: #596172;
     font-family: Courier New, Courier, monospace;
     font-size: 18pt;
@@ -10,10 +10,10 @@ h1 {
     color: #ec4c56;
 }
 .photo-zoom {
-    /*transform:scaleX(2) scaleY(1.5);*/
     object-fit: cover;
     height: 100%;
     width: auto;
+    position: relative;
     overflow: hidden;
 }
 .flex-center {
@@ -29,6 +29,9 @@ h1 {
 .text-area {
     padding: 1vh 1vw;
 }
+.start-intro h1 {
+    font-size: 70pt;
+}
 
 @media only screen and (min-device-width: 480px) {
     .start-screen {
@@ -36,22 +39,23 @@ h1 {
         flex-direction: row;
         align-items: center;
         height: 100vh;
-        width: 100vw;
+        width: 100%;
         margin: 0;
         padding: 0;
     }
     .start-photo {
         background: black;
-        flex: 0 0 40vw;
+        flex: 0 0 40%;
         height: 100vh;
-        width: 40vw;
+        width: 40%;
         margin: 0;
         padding: 0;
     }
     .start-intro {
         background: #242933;
-        flex: 0 0 60vw;
+        flex: 0 0 60%;
         height: 100vh;
+        font-size: 22pt;
     }
 }
 
