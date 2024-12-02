@@ -9,6 +9,9 @@ body {
 h1 {
     color: #ec4c56;
 }
+#hello-world {
+    min-height: 52pt;
+}
 .photo-zoom {
     object-fit: cover;
     height: 100%;
