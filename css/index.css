@@ -1,9 +1,14 @@
 body {
-    background: ghostwhite;
+    background: #1c222d;
     margin: 0;
     overflow-x: hidden;
+    color: #596172;
+    font-family: Courier New, Courier, monospace;
+    font-size: 18pt;
 }
-
+h1 {
+    color: #ec4c56;
+}
 .photo-zoom {
     /*transform:scaleX(2) scaleY(1.5);*/
     object-fit: cover;
@@ -44,7 +49,7 @@ body {
         padding: 0;
     }
     .start-intro {
-        background: white;
+        background: #242933;
         flex: 0 0 60vw;
         height: 100vh;
     }
