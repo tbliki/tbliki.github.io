@@ -10,7 +10,7 @@ h1 {
     color: #ec4c56;
 }
 #hello-world {
-    min-height: 52pt;
+    cursor: pointer;
 }
 .photo-zoom {
     object-fit: cover;
