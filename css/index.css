@@ -9,6 +9,9 @@ body {
 h1 {
     color: #ec4c56;
 }
+#hello-world {
+    cursor: pointer;
+}
 .photo-zoom {
     object-fit: cover;
     height: 100%;
@@ -28,9 +31,6 @@ h1 {
 }
 .text-area {
     padding: 1vh 1vw;
-}
-.start-intro h1 {
-    font-size: 70pt;
 }
 
 @media only screen and (min-device-width: 480px) {
