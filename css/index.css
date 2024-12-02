@@ -9,6 +9,9 @@ body {
 h1 {
     color: #ec4c56;
 }
+a {
+    color: #384a7e;
+}
 #hello-world {
     cursor: pointer;
 }
@@ -31,6 +34,10 @@ h1 {
 }
 .text-area {
     padding: 1vh 1vw;
+}
+.inline {
+    display: flex;
+    align-items: center;
 }
 
 @media only screen and (min-device-width: 480px) {
