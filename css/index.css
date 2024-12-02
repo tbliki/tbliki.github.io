@@ -1,0 +1,45 @@
+body {
+    background: ghostwhite;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+@media only screen and (min-device-width: 480px) {
+    .start-screen {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+    .photo-screen {
+        background: black;
+        flex: 0 0 40vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+    .intro-screen {
+        background: white;
+        flex: 0 0 60vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-device-width: 480px) {
+    .start-screen {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .photo-screen {
+        background: black;
+    }
+    .intro-screen {
+        background: white;
+    }
+}
