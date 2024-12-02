@@ -19,10 +19,10 @@ function setHello() {
         }
         let location = document.getElementById("hello-world");
         for (let i = 0; i <= prev.length; i++) {
-            setTimeout(() => {location.innerText = prev.substring(0, prev.length - i);}, 750 + i * 40);
+            setTimeout(() => {location.innerText = prev.substring(0, prev.length - i);}, 750 + i * 30);
         }
         for (let i = 1; i <= next.length; i++) {
-            setTimeout(() => {location.innerText = next.substring(0, i);}, 1500 + (i + prev.length) * 20);
+            setTimeout(() => {location.innerText = next.substring(0, i);}, 1500 + (i + prev.length*1.5) * 20);
         }
         setTimeout(() => {isTyping = false;}, 1500 + (next.length + prev.length) * 20);
     }
