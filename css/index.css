@@ -17,8 +17,8 @@ a {
 }
 .photo-zoom {
     object-fit: cover;
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 100%;
     position: relative;
     overflow: hidden;
 }
@@ -29,8 +29,8 @@ a {
     height: 100%;
     min-width: 100%;
 }
-.photo-darken {
-    filter: brightness(50%);
+.photo-hue {
+    filter: brightness(66%) sepia(100%) hue-rotate(300deg);
 }
 .text-area {
     padding: 1vh 1vw;
@@ -39,44 +39,75 @@ a {
     display: flex;
     align-items: center;
 }
+.no-overflow {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 50vw;
+    display: block;
+    overflow: hidden
+}
+.start-screen {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.start-photo {
+    background: #1c222d;
+    margin: 0;
+    padding: 0;
+}
+.start-intro {
+    background: #242933;
+    flex: 0 0 60%;
+    max-width: 60%;
+}
 
-@media only screen and (min-device-width: 480px) {
+@media only screen and (min-width: 1281px) {
     .start-screen {
-        display: flex;
         flex-direction: row;
-        align-items: center;
-        height: 100vh;
+        min-height: 100vh;
         width: 100%;
-        margin: 0;
-        padding: 0;
     }
     .start-photo {
-        background: black;
-        flex: 0 0 40%;
         height: 100vh;
-        width: 40%;
-        margin: 0;
-        padding: 0;
+        max-width: 40%;
+        flex-grow: 2;
     }
     .start-intro {
-        background: #242933;
-        flex: 0 0 60%;
-        height: 100vh;
-        font-size: 22pt;
+        min-height: 100vh;
+        font-size: 18pt;
     }
 }
 
+@media only screen and (min-width: 800px) and (max-width: 1280px) {
+    .start-screen {
+        flex-direction: row;
+        min-height: 100vh;
+        width: 100%;
+    }
+    .start-photo {
+        height: 100vh;
+        min-width: 40%;
+    }
+    .start-intro {
+        min-height: 100vh;
+        font-size: 15pt;
+    }
+}
 
-/*@media only screen and (max-device-width: 480px) {*/
-/*    .start-screen {*/
-/*        display: flex;*/
-/*        flex-direction: row;*/
-/*        align-items: center;*/
-/*    }*/
-/*    .photo-screen {*/
-/*        background: black;*/
-/*    }*/
-/*    .intro-screen {*/
-/*        background: white;*/
-/*    }*/
-/*}*/
+@media only screen and (min-width: 480px) and (max-width: 799px) {
+    .start-screen {
+        flex-direction: row;
+        min-height: 100vh;
+        min-width: 100vw;
+    }
+    .start-photo {
+        display: none;
+    }
+    .start-intro {
+        min-height: 100vh;
+        min-width: 100vw;
+        font-size: 15pt;
+    }
+}
